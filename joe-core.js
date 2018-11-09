@@ -141,7 +141,7 @@ var WK = {
 	saver: function(id, modelID){
 		var f = document.createElement("form");
 		f.setAttribute("method", "POST");
-    	f.setAttribute("action", WK.loca);
+    		f.setAttribute("action", WK.loca);
 		document.body.appendChild(f)
 		var i = document.createElement("input");
 		i.setAttribute("type", "hidden");
