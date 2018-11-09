@@ -1,0 +1,83 @@
+.walker-node {
+	border: 1px solid transparent;	
+}
+span.object::before{
+   	content: "\26EC  ";
+}
+span.array::before{
+   	content: "\25EB   ";
+}
+span.empty{
+	display: none !important;
+}
+
+span.copy-button::before{
+	content: "\002B ";
+}
+
+span.object, span.array{
+	-moz-border-radius:3px;
+    -moz-box-shadow:0 1px 0 rgba(250,250,250,.2),0 0 0 2px #fff inset;
+    -webkit-border-radius:3px;
+    -webkit-box-shadow:0 1px 0 rgba(250,250,250,.2),0 0 0 2px #fff inset;
+    background-color:rgba(250,250,250,.3);
+    border:1px solid rgba(50,50,50,.2);
+    border-radius:3px;
+    box-shadow:0 1px 0 $fog,0 0 0 2px #fff inset;
+    color: #069;
+    display:inline-block;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:16px;
+    font-weight: 700;
+    line-height:1.4;
+    margin:0 .1em;
+    padding:.1em .6em;
+    text-shadow:0 1px 0 #fff;
+}
+span.hot{
+	background: #ffcc00;
+	color: #990000;
+	font-weight: 700;
+}
+.walker-node li li{
+	border-radius: 2px;
+	display: inline-block;
+	margin: 0px 5px;
+	padding: 2px;
+}
+
+.walker-node:hover, 
+.walker-node:focus{
+	border:1px solid #fff;
+	cursor: pointer;
+}
+.editnode{
+	font-weight: 600;
+}
+.editnode input[type="text"]{
+	color: #069;
+	width: 300px;
+}
+.disabled{
+	border: 1px solid transparent;
+}
+.enabled{
+	display: block !important;
+	margin: 5px;
+
+}
+.similar{
+	border: 1px solid rgba(135,206,250,.3);
+}
+.close-report, 
+.save-report, {
+	background: #888;
+}
+.save-report{
+	background: #069;
+	color: #fff;
+}
+.close-report:hover,
+.save-report:hover{
+	cursor: pointer;
+}
